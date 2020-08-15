@@ -184,7 +184,6 @@ ghostimage3 = pygame.image.load(STATIC_DIR + "ghost3.png")
 
 # Width and height of the window
 screen = pygame.display.set_mode((800, 640), 0, 32)
-pygame.display.set_caption("Pacman -  Created By Archit Agrawal")
 background = pygame.surface.Surface((800, 800)).convert()
 
 
@@ -214,7 +213,7 @@ ghost3 = ghostclass(10, 10, [1, 0])
 # To initialise the value of score and time and the direction
 
 current_score = 0
-lives_left = 3
+lives_left = 1
 start_time = int(time.time())
 angle_where_pacman_point = 0
 
@@ -470,6 +469,3 @@ while True:
     # Wait for a while, computers are very fast.
     time.sleep(0.2)
 
-
-###############################################################
-# The end
